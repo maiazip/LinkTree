@@ -8,6 +8,10 @@
   --text-light:  #2b2b2b;
   --btn-dark: linear-gradient(to right, #2b2b2b 0%, #4d4d4d  51%, #2b2b2b  100%);
   --btn-light: linear-gradient(to right, #a7a7a7 0%, #f0f0f0  51%, #a7a7a7  100%);
+  --btn-border-dark: #4d4d4d;
+  --btn-border-light: #f0f0f0;
+  --details-dark: #f0f0f0;
+  --details-light: #4d4d4d;
 }
 /* CSS RESET */
 * {
@@ -20,8 +24,12 @@
 }
 
 .light {
+  --bg-dark: var(--bg-light);
+  --text-dark: var(--text-light);
+  --btn-dark: var(--btn-light);
+  --btn-border-dark: var(--btn-border-light);
+  --details-dark: var(--details-light);
 }
-
 
 body {
   width: 100vw;
@@ -42,15 +50,13 @@ main {
 main img {
   width: 140px;
   border-radius: 50%;
-  border: 6px double var(--text-dark);
-  opacity: 80%;
+  border: 6px double var(--details-dark);
 }
 
 main img:hover {
   cursor: grab;
   transition: 0.5s;
-  border: 6px solid var(--text-dark);
-  opacity: 100%;
+  border: 6px solid var(--details-dark);
 }
 
 main span {
@@ -74,6 +80,7 @@ main span {
   border-radius: 20px;
   display: block;
   transition: 0.5s;
+  border-color: var(--btn-border-dark);
 }
 
 #btnSec .btn:hover {
@@ -97,4 +104,12 @@ main span {
   cursor: pointer;
   transition: 0.5s;
   scale: 1.2;
+}
+
+#icoSec a:visited {
+  color: var(--details-dark);
+}
+
+svg {
+  color: var(--details-dark);
 }
