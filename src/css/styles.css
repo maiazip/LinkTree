@@ -12,6 +12,8 @@
   --btn-border-light: #f0f0f0;
   --details-dark: #f0f0f0;
   --details-light: #4d4d4d;
+  --switch-url-dark: url(../assets/moon.svg);
+  --switch-url-light: url(../assets/sun.svg);
 }
 /* CSS RESET */
 * {
@@ -29,6 +31,7 @@
   --btn-dark: var(--btn-light);
   --btn-border-dark: var(--btn-border-light);
   --details-dark: var(--details-light);
+  --switch-url-dark: var(--switch-url-light);
 }
 
 body {
@@ -62,6 +65,39 @@ main img:hover {
 main span {
   font-weight: bold;
   font-size: 16px;
+}
+
+#switch {
+  position: relative;
+  width: 64px;
+  margin: 4px auto;
+}
+
+#switch button {
+  width: 32px;
+  height: 32px;
+  background: var(--btn-border-dark) var(--switch-url-dark) no-repeat center;
+  border: 0;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.light #switch button {
+  right: 0;
+  left: initial;
+}
+
+#switch span {
+  display: block;
+  width: 64px;
+  height: 28px;
+  background: var(--btn-dark);
+  border: 1px solid var(--btn-border-dark);
+  border-radius: 9999px;
 }
 
 #btnSec {
