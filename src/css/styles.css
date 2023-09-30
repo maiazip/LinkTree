@@ -81,10 +81,6 @@ main span {
   animation: slide-in 0.2s forwards;
 }
 
-#switch button:hover {
-  outline: 4px solid var(--details-dark);
-}
-
 #switch span {
   display: block;
   width: 64px;
