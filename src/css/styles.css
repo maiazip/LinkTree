@@ -74,11 +74,15 @@ main span {
   z-index: 1;
   transform: translateY(-50%);
   cursor: pointer;
+  animation: slide-out 0.2s;
 }
 
 .lightMode #switch button {
-  right: 0;
-  left: initial;
+  animation: slide-in 0.2s forwards;
+}
+
+#switch button:hover {
+  outline: 4px solid var(--details-dark);
 }
 
 #switch span {
