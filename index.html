@@ -1,50 +1,60 @@
 <!DOCTYPE html>
-<html lang="en" class="light">
+<html lang="pt-br">
+
 <head>
- <!-- FONTS | METADATA -->
- <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <!-- FAVICON | TITLE -->
- <link rel="icon" type="image/svg" href="./src/assets/favicon.svg">
- <title>LinkTree</title>
- <!-- CSS | JS -->
- <link rel="stylesheet" href="./src/css/styles.css">
- <script src="./src/js/scripts.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="svg" href="./src/assets/favicon.svg">
+  <link href="https://fonts.googleapis.com/css?family=Oxygen:300,regular,700" rel="stylesheet" />
+  <title>LinkTree</title>
+  <link rel="stylesheet" href="./src//css/reset.css">
+  <link rel="stylesheet" href="./src/css/styles.css">
+  <link rel="stylesheet" href="./src/css/media.css">
 </head>
 
 <body>
-    <main>
-      <img src="https://avatars.githubusercontent.com/u/107927051?v=4" alt="Profile Picture">
-      <span>Matheus Maia</span>
-      <div id="switch">
+  <main>
+    <img src="https://avatars.githubusercontent.com/u/107927051?v=4" alt="Profile Picture">
+    <span>Matheus Maia</span>
+    <div id="switch" onclick="toggleMode()">
       <button></button>
       <span></span>
-      </div>
-<!-- Buttons -->
-<section id="btnSec">
+    </div>
+    <section id="btnSec">
       <ul>
-       <a href=""><li><button class="btn">Twitch</button></li></a>
-        <a href=""><li><button class="btn">Tiktok</button></li></a>
-        <a href=""><li><button class="btn">Discord</button></li></a>
-        <a href=""><li><button class="btn">Twitch</button></li></a>
-        <a href=""><li><button class="btn">Youtube</button></li></a>
-        <a href=""><li><button class="btn">Facebook</button></li></a>
+        <a href="https://www.twitch.tv/infowner">
+          <li><button class="btn">Twitch</button></li>
+        </a>
+        <a href="">
+          <li><button class="btn">Tiktok</button></li>
+        </a>
+        <a href="https://discord.com/invite/5nygbGY84m">
+          <li><button class="btn">Discord</button></li>
+        </a>
+        <a href="">
+          <li><button class="btn">Twitch</button></li>
+        </a>
+        <a href="">
+          <li><button class="btn">Youtube</button></li>
+        </a>
+        <a href="">
+          <li><button class="btn">Facebook</button></li>
+        </a>
       </ul>
-</section>
-<!-- Icons -->
-<section id="icoSec">
-  <a href="https://www.linkedin.com/in/maiacoding/"><i width="30px" height="30px" data-lucide="linkedin"></i></a>
-  <a href="https://github.com/maiacoding"><i width="30px" height="30px" data-lucide="github"></i></a>
-  <a href="https://www.instagram.com/maia.zip/"><i width="30px" height="30px" data-lucide="instagram"></i></a>
-  <a href=""><i width="30px" height="30px" data-lucide="twitter"></i></a>
-  <a href=""><i width="30px" height="30px" data-lucide="at-sign"></i></a>
-</section>
-</main>
- <!-- LUCIDE ICONS -->
- <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
- <script>
-  lucide.createIcons();
-</script>
+    </section>
+    <section id="icoSec">
+      <a href="https://www.linkedin.com/in/maiacoding/"><i width="30px" height="30px" data-lucide="linkedin"></i></a>
+      <a href="https://github.com/maiacoding"><i width="30px" height="30px" data-lucide="github"></i></a>
+      <a href="https://www.instagram.com/maia.zip/"><i width="30px" height="30px" data-lucide="instagram"></i></a>
+      <a href="https://twitter.com/infowner"><i width="30px" height="30px" data-lucide="twitter"></i></a>
+      <a href="https://www.threads.net/@maia.zip"><i width="30px" height="30px" data-lucide="at-sign"></i></a>
+    </section>
+  </main>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+  <script src="./src/js/scripts.js"></script>
 </body>
+
 </html>

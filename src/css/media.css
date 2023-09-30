@@ -1,0 +1,20 @@
+@media (max-width: 325px) {
+
+  main img {
+    width: 120px;
+  }
+
+  #btnSec .btn {
+    width: 300px;
+  }
+
+  #icoSec {
+    width: 100%;
+    height: 30px;
+  }
+
+  #icoSec svg {
+    width: 20px;
+    height: 28px;
+  }
+}
