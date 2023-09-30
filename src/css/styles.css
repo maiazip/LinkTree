@@ -59,6 +59,7 @@ main span {
   position: relative;
   width: 64px;
   margin: 4px auto;
+  cursor: pointer;
 }
 
 #switch button {
@@ -72,9 +73,10 @@ main span {
   left: 0;
   z-index: 1;
   transform: translateY(-50%);
+  cursor: pointer;
 }
 
-.light #switch button {
+.lightMode #switch button {
   right: 0;
   left: initial;
 }
@@ -87,8 +89,6 @@ main span {
   border: 1px solid var(--btn-border-dark);
   border-radius: 9999px;
 }
-
-#btnSec {}
 
 #btnSec .btn {
   width: 360px;
