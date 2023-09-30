@@ -1,7 +1,13 @@
 @media (max-width: 375px) {
+  #btnSec .btn {
+    width: 340px;
+  }
+}
+
+@media (max-width: 365px) {
 
   main img {
-    width: 120px;
+    width: 100px;
   }
 
   #btnSec .btn {
