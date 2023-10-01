@@ -1,22 +1,27 @@
-<h1 align="center"> LinkTree </h1>
+<h1 align="center">LinkTree</h1>
 
 <p align="center">
-Reúna todos os seus links em um único lugar!
+Reúna todos os links das suas mídias em um único lugar!
 
 <p align="center">
-<a href="##-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
-<a href="#-projeto">Projeto</a>
+<a href="#projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="#tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="#contato">Contato</a>
 </p>
 
-<br>
+<div align="center">
+
+[Link para acesso](https://maiacoding.github.io/LinkTree/)
+</div>
 
 <p align="center">
 <img alt="Page Preview" src="./.github/preview.png" witdh="100%">
 </p>
 
-## Tecnologias
+## Projeto
+O projeto LinkTree foi feito para reunir diversos links em um único lugar, agregando as informações e assim facilitando o acesso a qualquer tipo de mídia.
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+## Tecnologias
 
 - HTML
 - CSS
@@ -24,5 +29,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Git
 - Github
   
-## Projeto
-O projeto LinkTree é um projeto feito para reunir diversos links em um único lugar, agregando as informações e assim facilitando o acesso a qualquer tipo de mídia.
+## Contato
+
+matheusmaiabastos@hotmail.com
