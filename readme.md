@@ -11,7 +11,7 @@ Reúna todos os links das suas mídias em um único lugar!
 
 <div align="center">
 
-[Link para acesso](https://maiacoding.github.io/LinkTree/)
+[Link para acesso](https://maiazip.github.io/LinkTree/)
 </div>
 
 <p align="center">
@@ -28,7 +28,7 @@ O projeto LinkTree foi feito para reunir diversos links em um único lugar, agre
 - JavaScript
 - Git
 - Github
-  
+- Lucide Icons
 ## Contato
 
-matheusmaiabastos@hotmail.com
+maia.zip@hotmail.com
