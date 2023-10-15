@@ -58,8 +58,15 @@ main span {
 #switch {
   position: relative;
   width: 64px;
+  height: 40px;
   margin: 4px auto;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+ 
+#switch button:hover { border: 2px solid var(--details-dark);
+
 }
 
 #switch button {
@@ -70,7 +77,7 @@ main span {
   border-radius: 50%;
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 0px;
   z-index: 1;
   transform: translateY(-50%);
   cursor: pointer;
@@ -139,3 +146,4 @@ main span {
 svg {
   color: var(--details-dark);
 }
+
