@@ -15,7 +15,8 @@ Reúna todos os links das suas mídias em um único lugar!
 </div>
 
 <p align="center">
-<img alt="Page Preview" src="./.github/preview.png" witdh="100%">
+<img alt="Page Desktop Preview" src="./.github/image-preview-desktop.png" witdh="100%">
+<img alt="Page Desktop Preview" src="./.github/image-preview-mobile.png" witdh="100%">
 </p>
 
 ## Projeto
