@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Reúna todos os seus links em um só lugar, através do MaiLinkTree">
+  <link rel="icon" type="svg" href="./src/assets/favicon.svg">
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
+    rel="stylesheet" />
+  <title>LinkTree</title>
+  <link rel="stylesheet" href="./src/styles.css">
+</head>
+
+<body>
+  <main class="full flex">
+    <section class="profile flex">
+      <img src="https://avatars.githubusercontent.com/u/107927051?v=4" title="Profile Picture" alt="Profile Picture">
+      <h1>Matheus Maia Bastos</span>
+        <div class="flex" id="switch-mode" onclick="toggleMode()">
+          <button tabindex="1"></button>
+          <span></span>
+        </div>
+    </section>
+
+    <section class="links flex">
+      <ul class="flex">
+        <a href="https://github.com/maiazip?tab=repositories" title="Repositórios" target="_blank">
+          <li><button class="btn" tabindex="2">Repositórios</button></li>
+        </a>
+        <a href="https://www.linkedin.com/in/maiazip/" title="LinkedIn" target="_blank">
+          <li><button class="btn" tabindex="3">LinkedIn</button></li>
+        </a>
+        <a href="https://maiazip.github.io/Portfolio/" title="Portfolio" target="_blank">
+          <li><button class="btn" tabindex="4">Portfolio</button></li>
+        </a>
+        <a href="" title="Email" target="_blank">
+          <li><button class="btn" tabindex="5">Email</button></li>
+        </a>
+        <a href="" title="Telegram" target="_blank">
+          <li><button class="btn" tabindex="6">Telegram</button></li>
+        </a>
+        <a href="" title="Whatsapp" target="_blank">
+          <li><button class="btn" tabindex="7">Whatsapp</button></li>
+        </a>
+      </ul>
+    </section>
+
+    <section class="icons flex">
+      <a href="https://github.com/maiazip" title="Github" target="_blank"><i class="icon" data-lucide="github"
+          alt="Icon Github"></i></a>
+      <a href="https://www.instagram.com/maia.zip/" title="Instagram" target="_blank"><i class="icon"
+          data-lucide="instagram" alt="Icon Instagram"></i></a>
+      <a href="https://twitter.com/maiazip" title="Twitter" target="_blank"><i class="icon" data-lucide="twitter"
+          alt="Icon Twitter"></i></a>
+      <a href="https://www.threads.net/@maia.zip" title="Threads" target="_blank"><i class="icon" data-lucide="at-sign"
+          alt="Icon Threads"></i></a>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <script>
+    lucide.createIcons();
+    function toggleMode() {
+      const html = document.documentElement
+
+      html.classList.toggle('light-mode')
+    }
+  </script>
+</body>
+
+</html>
