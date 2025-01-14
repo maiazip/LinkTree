@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto' system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  overflow: hidden;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --bg-dark: linear-gradient(to bottom, #2b2b2b 0%, #0c0c0c 100%);
+  --bg-light: linear-gradient(to bottom, #f0f0f0 0%, #4d4d4d 100%);
+  --text-dark: #f0f0f0;
+  --text-light: #2b2b2b;
+  --btn-dark: linear-gradient(to right, #2b2b2b 0%, #4d4d4d 51%, #2b2b2b 100%);
+  --btn-light: linear-gradient(to right, #a7a7a7 0%, #f0f0f0 51%, #a7a7a7 100%);
+  --btn-border-dark: #4d4d4d;
+  --btn-border-light: #f0f0f0;
+  --details-dark: #f0f0f0;
+  --details-light: #333333;
+  
+  --switch-details-dark: #5c5c5c;
+  --switch-details-white: #cecece;
+  --switch-url-dark: url(../src/assets/img-moon.svg);
+  --switch-url-light: url(../src/assets/img-sun.svg);
+
+  --measure-small: .25rem;
+  --measure-medium: .5rem;
+  --measure-large: 1rem;
+}
+
+.light-mode {
+  --bg-dark: var(--bg-light);
+  --text-dark: var(--text-light);
+  --btn-dark: var(--btn-light);
+  --btn-border-dark: var(--btn-border-light);
+  --details-dark: var(--details-light);
+  --switch-details-dark: var(--switch-details-white);
+  --switch-url-dark: var(--switch-url-light);
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: var(--measure-medium);
+}
+
+.full {
+  width: 100%;
+  height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+main {
+  background-image: var(--bg-dark);
+}
+
+.profile img {
+  width: 7rem;
+  height: auto;
+  border-radius: 50%;
+  border: 6px double var(--details-dark);
+}
+
+.profile img:hover {
+  cursor: grab;
+  transition: 0.5s;
+  border: 6px solid var(--details-dark);
+}
+
+.profile h1 {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+#switch-mode {
+  position: relative;
+  width: 64px;
+  height: 40px;
+  margin: 4px auto;
+  cursor: pointer;
+}
+
+#switch-mode button:hover {
+  border: 2px solid var(--details-dark);
+}
+
+#switch-mode button {
+  width: 32px;
+  height: 32px;
+  background: var(--btn-border-dark) var(--switch-url-dark) no-repeat center;
+  border: 0;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  z-index: 1;
+  transform: translateY(-50%);
+  cursor: pointer;
+  animation: slide-out 0.2s;
+  border: 2px solid var(--switch-details-dark);
+}
+
+.light-mode #switch-mode button {
+  animation: slide-in 0.2s forwards;
+}
+
+#switch-mode span {
+  display: block;
+  width: 64px;
+  height: 26px;
+  background: var(--btn-dark);
+  border: 1px solid var(--btn-border-dark);
+  border-radius: 9999px;
+}
+
+.btn {
+  width: 14rem;
+  height: 2.5rem;
+  padding: var(--measure-medium) var(--measure-large);
+  text-align: center;
+  text-transform: uppercase;
+  background-image: var(--btn-dark);
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: var(--text-dark);
+  border-radius: var(--measure-medium);
+  display: block;
+  transition: 0.5s;
+  border-color: var(--btn-border-dark);
+}
+
+
+.btn:hover {
+  background-position: right center;
+  color: var(--details-dark);
+}
+
+.icons {
+  flex-direction: row;
+  width: 14rem;
+  height: 3rem;
+  justify-content: space-between;
+}
+
+.icons a {
+  display: flex;
+}
+
+svg {
+  height: 30px;
+  width: 30px;
+  color: var(--text-dark);
+}
+
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-out {
+  from {
+    left: 50%;
+  }
+
+  to {
+    left: 0;
+  }
+}
+
+@media (min-width: 768px) { 
+
+  .profile img {
+    width: 10rem;
+  }
+
+.profile h1 {
+  font-size: 1.5rem;
+}
+
+.btn {
+  width: 20rem;
+  height: 3rem;
+}
+
+.icons {
+  width: 20rem;
+}
+
+}
