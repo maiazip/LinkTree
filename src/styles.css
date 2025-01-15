@@ -130,6 +130,14 @@ main section {
   border-radius: 9999px;
 }
 
+.links li {
+  transition: .3s ease-in-out;
+}
+
+.links li:hover {
+  scale: 0.96;
+}
+
 .btn {
   display: block;
   width: 14rem;
@@ -160,16 +168,16 @@ main section {
 
 .icons a {
   display: flex;
+  height: 2rem;
+  width: 2rem;
+  color: var(--text-dark);
 }
 
-svg {
-  height: 30px;
-  width: 30px;
-  color: var(--text-dark);
+.icons li {
   transition: 0.3s ease-in-out;
 }
 
-svg:hover {
+.icons li:hover {
   scale: 1.1;
 }
 
