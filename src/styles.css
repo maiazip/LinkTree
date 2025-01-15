@@ -64,6 +64,11 @@ body {
 
 main {
   background-image: var(--bg-dark);
+
+}
+
+main section {
+  animation: appear 2s;
 }
 
 .profile img {
@@ -181,6 +186,19 @@ svg {
 
   to {
     left: 0;
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+    scale: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    scale: 1;
   }
 }
 
