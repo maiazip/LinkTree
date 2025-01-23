@@ -1,4 +1,4 @@
-<h1 align="center">GamersTree</h1>
+<h1 align="center">LinkTree</h1>
 
 <p align="center">
 Reúna e compartilhe todos os seus links com praticidade.
